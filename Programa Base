@@ -1,0 +1,91 @@
+/*Programa que sirve para obtener el porcentaje de las características de las crías de la cruza de dos mamíferos, macho y hembra,
+así como cuántas de las crías van a tener tales características*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+/*Qué tipo de mamífero es el que deseamos evaluar*/
+	char h; //humano//
+	char f; //felino//
+	char l; //lupino//
+	char p; //primate//
+	char Tipo[15];
+
+/*Se declaran todas las variables de los progenitores*/
+
+	char ojos[10];
+	char cabello[10];
+	char piel[10];
+	char mota[5];
+	char pelo [10];
+	char Mendel[5][5];
+	
+	
+	printf ("Escriba la letra de los mamiferos que cruzara \n\t");
+	printf (" h)humano  f)felino  l)lupino  p)primate\n\t");
+	scanf ("%c", &Tipo);
+	
+//Se elige el tipo de mamífero que es//
+	switch (Tipo){
+		case 'h':
+		//Acciones que se toman si el tipo es humano//
+		/*Se pregunta qué características tienen los porgenitores*/
+
+//Características del Padre//
+
+	printf ("Introduzca las caracteristicas del padre\n\t");
+	printf ("\n");
+	printf ("Color del cabello:\n\t a)Negro b)Cafe c)Rubio\n\t");
+	scanf ("%c", &cabello);
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
+	scanf ("%c", &ojos);
+	printf ("\n");
+	printf ("Color de piel:\n\t a)Oscura b)Moreno c)Blanco\n\t");
+	scanf ("%c", &piel);
+	
+//Caracterìsticas de la Madre//
+
+	printf ("Introduzca las caracteristicas de la madre\n\t");
+	printf ("\n");
+	printf ("Color del cabello:\n\t a)Negro b)Cafe c)Rubio\n");
+	scanf ("%c", &cabello);
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
+	scanf ("%c", &ojos);
+	printf ("\n");
+	printf ("Color de piel:\n\t a)Oscura b)Moreno c)Blanco\n\t");
+	scanf ("%c", &piel);
+	
+
+	
+//Se hace el cálculo según las leyes de Mendel//
+
+//En esta sección va escrito el arreglo que nos dirá el porcentaje de los hijos  y de sus caracterìsticas//
+
+	printf ("El resultado de las crias o producto de la cruza es:\n\t");
+	printf ("arreglo");/*En esta parte se mostrarà el porcentaje de cada cría junto con sus características 
+	específicas*/
+		break;
+		
+		case 'f':
+		//Acciones que se toman si es felino//
+		break;
+		
+		case 'l':
+		//Acciones que se toman si es lupino//
+		break;
+		
+		case 'p':
+		//Acciones que se toman si es primate//
+		break;
+		
+		default:
+			printf ("El mamífero no se encuentra en la lista\n\t");
+	}
+
+
+	return 0;
+}
