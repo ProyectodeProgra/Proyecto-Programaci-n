@@ -7,59 +7,46 @@ así como cuántas de las crías van a tener tales características*/
 
 int main() {
 /*Qué tipo de mamífero es el que deseamos evaluar*/
-	char h; //humano//
-	char f; //felino//
-	char l; //lupino//
-	char p; //primate//
-	char Tipo[15];
-
+	int Tipo='\0'; /*Si es humano, primate, felino o lupino*/
 /*Se declaran todas las variables de los progenitores*/
 
 	char ojos[10];
 	char cabello[10];
-	char piel[10];
-	char mota[5];
-	char pelo [10];
+	char mota[10]
 	char Mendel[5][5];
 	
-	
-	printf ("Escriba la letra de los mamiferos que cruzara \n\t");
+	printf ("		BIENVENIDO A TU TABLA DE MENDEL EN LINEA\n\t");
+	printf ("En este programa, usted podra elegir de entre 4 mamiferos, asi\n\t así como sus caracteristicas" );
+	printf ("Escriba la letra de el mamifero que cruzara \n\t");
 	printf (" h)humano  f)felino  l)lupino  p)primate\n\t");
 	scanf ("%c", &Tipo);
 	
 //Se elige el tipo de mamífero que es//
 	switch (Tipo){
 		case 'h':
-		//Acciones que se toman si el tipo es humano//
-		/*Se pregunta qué características tienen los porgenitores*/
+		//Acciones que se toman si el tipo es humano, felino, lupino o primate//
+		/*Se pregunta qué características tienen los progenitores*/
 
-//Características del Padre//
+		//Características del Padre//
 
-	printf ("Introduzca las caracteristicas del padre\n\t");
+	printf ("Introduzca las caracteristicas del padre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
 	printf ("\n");
 	printf ("Color del cabello:\n\t a)Negro b)Cafe c)Rubio\n\t");
-	scanf ("%c", &cabello);
 	printf ("\n");
-	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
-	scanf ("%c", &ojos);
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro c)Verde d)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
 	printf ("\n");
-	printf ("Color de piel:\n\t a)Oscura b)Moreno c)Blanco\n\t");
-	scanf ("%c", &piel);
 	
 //Caracterìsticas de la Madre//
 
-	printf ("Introduzca las caracteristicas de la madre\n\t");
+	printf ("Introduzca las caracteristicas de la madre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
 	printf ("\n");
-	printf ("Color del cabello:\n\t a)Negro b)Cafe c)Rubio\n");
-	scanf ("%c", &cabello);
+	printf ("Color del cabello:\n\t a)Negro b)Cafe c)Rubio\n\t");
 	printf ("\n");
 	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
-	scanf ("%c", &ojos);
+	scanf ("%s%s", &cabello, &ojos);
 	printf ("\n");
-	printf ("Color de piel:\n\t a)Oscura b)Moreno c)Blanco\n\t");
-	scanf ("%c", &piel);
 	
-
 	
 //Se hace el cálculo según las leyes de Mendel//
 
@@ -72,18 +59,78 @@ int main() {
 		
 		case 'f':
 		//Acciones que se toman si es felino//
+		
+		//Características del Padre//
+
+	printf ("Introduzca las caracteristicas del padre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Color de motas en el pelo:\n\t a)Negras b)Cafes c)Sin motas\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro c)Verde d)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
+	
+		//Caracterìsticas de la Madre//
+
+	printf ("Introduzca las caracteristicas de la madre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Color de motas en el pelo:\n\t a)Negras b)Cafes c)Sin motas\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
 		break;
 		
 		case 'l':
 		//Acciones que se toman si es lupino//
+		
+		//Características del Padre//
+
+	printf ("Introduzca las caracteristicas del padre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Presenta motas en la cabeza:\n\t a)Si b)No c)Pocas\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro c)Verde d)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
+	
+//Caracterìsticas de la Madre//
+
+	printf ("Introduzca las caracteristicas de la madre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Presenta motas en la cabeza:\n\t a)Si b)No c)Pocas\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
 		break;
 		
 		case 'p':
 		//Acciones que se toman si es primate//
+		
+		//Características del Padre//
+
+	printf ("Introduzca las caracteristicas del padre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Color del pelo:\n\t a)Negro b)Cafe c)Cafe Claro\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro c)Verde d)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
+	
+//Caracterìsticas de la Madre//
+
+	printf ("Introduzca las caracteristicas de la madre(Escriba una letra primero\n\t y despues del Enter la otra)\n\t");
+	printf ("\n");
+	printf ("Color del pelo:\n\t a)Negro b)Cafe c)Cafe Claro\n\t");
+	printf ("\n");
+	printf ("Color de los ojos:\n\t a)Cafe b)Negro b)Verde c)Azul\n\t");
+	scanf ("%s%s", &cabello, &ojos);
+	printf ("\n");
 		break;
 		
 		default:
-			printf ("El mamífero no se encuentra en la lista\n\t");
+			printf ("El mamifero no se encuentra en la lista\n\t");
 	}
 
 
